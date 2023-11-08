@@ -1,0 +1,39 @@
+:host {
+  display: flex;
+  flex-direction: row;
+
+  .form {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+    &__title {
+      padding: 1rem;
+      display: flex;
+      align-items: flex-end;
+      gap: 0.25rem;
+
+      img {
+        height: 4rem;
+      }
+
+      span {
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: -0.25rem;
+      }
+    }
+  }
+
+  .image {
+    background: url("/assets/login.jpg") no-repeat center;
+    flex: 1;
+    height: 100vh;
+    display: none;
+
+    @media (min-width: 768px) {
+      display: block;
+    }
+  }
+}

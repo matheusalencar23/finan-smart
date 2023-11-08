@@ -8,13 +8,15 @@
 
 body {
   font-family: "Ubuntu", sans-serif;
-  color: var(--typography);
+  color: var(--primary-typography);
 }
 
 :root {
-  --typography: #000;
+  --primary-typography: #1b212d;
+  --primary-bg: #fff;
 }
 
 :root .dark {
-  --typography: #fff;
+  --primary-typography: #fff;
+  --primary-bg: #1c1a2e;
 }
