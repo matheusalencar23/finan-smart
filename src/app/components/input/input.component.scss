@@ -1,0 +1,26 @@
+:host {
+  display: block;
+  margin-bottom: 0.5rem;
+
+  label,
+  input {
+    display: block;
+  }
+
+  label {
+    margin-bottom: 0.25rem;
+    font-weight: 500;
+  }
+
+  input {
+    width: 100%;
+    padding: 0.4rem;
+    border: 1px solid var(--border);
+    border-radius: 0.5rem;
+    outline: none;
+
+    &:focus {
+      border-color: darken(red, 10);
+    }
+  }
+}
