@@ -6,8 +6,9 @@ import { CommonModule } from '@angular/common';
   standalone: true,
   imports: [CommonModule],
   templateUrl: './external-page-layout.component.html',
-  styleUrl: './external-page-layout.component.scss'
+  styleUrl: './external-page-layout.component.scss',
+  host: {
+    class: 'flex flex-row',
+  },
 })
-export class ExternalPageLayoutComponent {
-
-}
+export class ExternalPageLayoutComponent {}

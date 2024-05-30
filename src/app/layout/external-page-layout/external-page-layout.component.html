@@ -1,8 +1,10 @@
-<div class="form">
-  <h1 class="form__title">
-    <img src="assets/logo.svg" alt="Logo do FinanSmart" />
-    <span>FinanSmart</span>
+<div class="flex flex-1 flex-col p-4">
+  <h1 class="p-4 flex items-end gap-1">
+    <img src="assets/logo.svg" alt="Logo do FinanSmart" class="h-16" />
+    <span class="font-medium text-3xl">FinanSmart</span>
   </h1>
   <ng-content />
 </div>
-<div class="image"></div>
+<div
+  class="flex-1 h-screen bg-external-image bg-cover bg-center bg-no-repeat hidden md:block"
+></div>
