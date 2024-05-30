@@ -1,5 +1,5 @@
 import { Routes } from '@angular/router';
-import { LoginComponent } from './pages/login/login.component';
+import { LoginComponent } from './features/login/login.component';
 
 const routeTitle = (title: string) => `FinanSmart | ${title}`;
 
@@ -8,7 +8,7 @@ export const routes: Routes = [
   {
     path: 'register',
     loadComponent: () =>
-      import('./pages/register/register.component').then(
+      import('./features/register/register.component').then(
         (c) => c.RegisterComponent
       ),
     title: routeTitle('Register'),
@@ -16,14 +16,14 @@ export const routes: Routes = [
   {
     path: 'internal',
     loadComponent: () =>
-      import('./pages/internal/internal.component').then(
+      import('./features/internal/internal.component').then(
         (c) => c.InternalComponent
       ),
     children: [
       {
         path: 'dashboard',
         loadComponent: () =>
-          import('./pages/internal/dashboard/dashboard.component').then(
+          import('./features/internal/dashboard/dashboard.component').then(
             (c) => c.DashboardComponent
           ),
         title: routeTitle('Dashboard'),
@@ -31,7 +31,7 @@ export const routes: Routes = [
       {
         path: 'entries',
         loadComponent: () =>
-          import('./pages/internal/entries/entries.component').then(
+          import('./features/internal/entries/entries.component').then(
             (c) => c.EntriesComponent
           ),
         title: routeTitle('Entries'),
