@@ -1,8 +1,12 @@
 <app-external-page-layout>
-  <h2>Bem-vindo</h2>
-  <span>Por favor, insira suas credenciais</span>
-  <form>
-    <app-input label="Email" />
-    <app-input label="Senha" />
-  </form>
+  <div
+    class="flex flex-col flex-1 justify-center pb-48 mx-auto w-11/12 md:w-5/6 lg:w-3/4 xl:w-2/4 max-w-sm"
+  >
+    <h2 class="self-center font-semibold text-3xl mb-4">Bem-vindo</h2>
+    <p class="font-medium text-xl mb-2">Por favor, insira suas credenciais</p>
+    <form class="flex flex-col items-center w-full">
+      <app-input label="Email" class="w-full" />
+      <app-input label="Senha" class="w-full" />
+    </form>
+  </div>
 </app-external-page-layout>
