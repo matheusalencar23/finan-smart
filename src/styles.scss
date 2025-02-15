@@ -16,13 +16,18 @@ body {
 }
 
 :root {
+  --primary-color: #0072bb;
+  --secondary-color: #6ecabb;
+
   --primary-typography: #1b212d;
   --primary-bg: #fff;
-  --border: #f2f2f2;
+  --border-1: #f2f2f2;
+  --focus-1: #ff0000;
 }
 
 :root .dark {
   --primary-typography: #fff;
   --primary-bg: #1c1a2e;
-  --border: #282541;
+  --border-1: #282541;
+  --focus-1: #ff0000;
 }

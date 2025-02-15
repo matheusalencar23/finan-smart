@@ -15,12 +15,12 @@
   input {
     width: 100%;
     padding: 0.4rem;
-    border: 1px solid var(--border);
+    border: 1px solid var(--border-1);
     border-radius: 0.5rem;
     outline: none;
 
     &:focus {
-      border-color: darken(red, 10);
+      border-color: var(--primary-color);
     }
   }
 }
